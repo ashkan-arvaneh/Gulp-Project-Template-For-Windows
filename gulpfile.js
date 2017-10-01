@@ -14,7 +14,7 @@ connect      = require('gulp-connect'),
 browserify   = require('gulp-browserify'),
 usemin       = require('gulp-usemin'),
 imagemin     = require('gulp-imagemin'),
-rename = require('gulp-rename');
+rename       = require('gulp-rename');
 
 // Connect Task
 gulp.task('connect', connect.server({
@@ -31,7 +31,7 @@ gulp.task('html', function () {
 
 // sass compiler task
 gulp.task('sass', function () {
-  return gulp.src('./app/styles/**/*.scss')
+  return gulp.src('./app/styles/main.scss')
     .pipe(sass({
       onError: function (error) {
         gutil.log(gutil.colors.red(error));
@@ -42,7 +42,7 @@ gulp.task('sass', function () {
       }
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(gulp.dest('./app/styles/'))
+    .pipe(gulp.dest('./app/styles/compiled'))
     .pipe(connect.reload());
 });
 
@@ -73,7 +73,7 @@ gulp.task('js', function () {
     .pipe(rename(function (path) {
       path.basename = 'bundle';
     }))
-    .pipe(gulp.dest('app/js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(connect.reload());
 });
 

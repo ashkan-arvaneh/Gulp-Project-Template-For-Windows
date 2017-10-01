@@ -1,4 +1,5 @@
-body {
-  background: #f9f9f9;
-  font-family: 'Heveltica', sans-serif;
-}
+// reset
+@import "lib/reset/reset";
+
+// modular sass components
+//@import "components/header";

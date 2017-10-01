@@ -4,10 +4,10 @@ A simple way to kick start gulp based web app projects.
 
 ## Getting Started
 
-First you need to install the module running:
+First navigate to your project directory and download the repo:
 
 ```shell
-npm install -g gulp-project-template-for-windows
+npm install gulp-project-template-for-windows
 ```
 
 To create and start using a new gulp project, run the following:
@@ -39,8 +39,10 @@ A sample project structure would be:
 
 ```
 |-- app
-|  |-- vendors (bower_components)
 |  |-- styles
+|  |  |-- compiled
+|  |     |-- main.css ( the complied css file which is copied into dist/css)
+|  |  |-- lib
 |  |  |-- main.scss
 |  |-- js
 |  |  |-- script_one.js

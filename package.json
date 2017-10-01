@@ -1,6 +1,6 @@
 {
   "name": "gulp-project-template-for-windows",
-  "version": "1.0.0",
+  "version": "1.5.1",
   "devDependencies": {
     "coveralls": "^2.8.0",
     "event-stream": "^3.1.0",

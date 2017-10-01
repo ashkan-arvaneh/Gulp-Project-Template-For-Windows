@@ -57,3 +57,15 @@ A sample project structure would be:
 |  |-- index.html
 |-- node_modules
 ```
+## Troubleshooting
+
+In case of any compiling error, make sure your windows has the required compilers:
+
+```shell
+# Install Visual C++ Compilers, etc ...
+$ npm install --global --production windows-build-tools
+# command-line tool written in Node.js for compiling native addon modules
+$ npm install -g node-gyp
+``` 
+https://github.com/felixrieseberg/windows-build-tools
+https://github.com/nodejs/node-gyp

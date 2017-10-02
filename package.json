@@ -1,7 +1,7 @@
 {
   "name": "gulp-project-template-for-windows",
   "author": "Ashkan Arvaneh <ashkan.arvaneh@gmail.com>",
-  "version": "1.5.7",
+  "version": "1.5.9",
   "devDependencies": {
     "coveralls": "^2.8.0",
     "event-stream": "^3.1.0",

@@ -1,7 +1,7 @@
 {
   "name": "gulp-project-template-for-windows",
   "author": "Ashkan Arvaneh <ashkan.arvaneh@gmail.com>",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "devDependencies": {
     "coveralls": "^2.8.0",
     "event-stream": "^3.1.0",
@@ -10,14 +10,17 @@
     "gulp-browserify": "^0.4.4",
     "gulp-clean": "^0.2.4",
     "gulp-connect": "^0.8.0",
-    "gulp-imagemin": "^0.1.5",
+    "gulp-image": "^3.0.0",
     "gulp-jshint": "^1.4.0",
     "gulp-livereload": "^1.1.1",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.1.0",
+    "gulp-sass": "^3.1.0",
     "gulp-usemin": "^0.2.1",
     "gulp-util": "^2.2.13",
-    "gulp-sass": "^3.1.0",
     "istanbul": "^0.2.4"
+  },
+  "dependencies": {
+    "jpegtran-bin": "^3.2.0"
   }
 }

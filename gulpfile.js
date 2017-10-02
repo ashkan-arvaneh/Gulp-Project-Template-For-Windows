@@ -13,9 +13,8 @@ clean        = require('gulp-clean'),
 connect      = require('gulp-connect'),
 browserify   = require('gulp-browserify'),
 usemin       = require('gulp-usemin'),
-imagemin     = require('gulp-imagemin'),
-rename       = require('gulp-rename');
-
+rename       = require('gulp-rename'),
+image        = require('gulp-image');
 // Connect Task
 gulp.task('connect', connect.server({
   root: ['./app'],
@@ -47,20 +46,11 @@ gulp.task('sass', function () {
 });
 
 // Minify images
-gulp.task('imagemin', function () {
-  return es.concat(
-    gulp.src('./app/images/**/*.png')
-      .pipe(imagemin())
-      .pipe(gulp.dest('/dest/img')),
-    gulp.src('./app/images/**/*.jpg')
-      .pipe(imagemin())
-      .pipe(gulp.dest('/dest/img')),
-    gulp.src('./app/images/**/*.gif')
-      .pipe(imagemin())
-      .pipe(gulp.dest('/dest/img'))
-  );
+gulp.task('image', function () {
+  gulp.src('app/images/*')
+    .pipe(image())
+    .pipe(gulp.dest('./dist/images'));
 });
-
 
 // Script task
 gulp.task('js', function () {
@@ -100,7 +90,7 @@ gulp.task('clean-build', function () {
     .pipe(clean());
 });
 
-gulp.task('build', ['clean-build', 'sass', 'js', 'imagemin', 'usemin'], function () {
+gulp.task('build', ['clean-build', 'sass', 'js', 'image', 'usemin'], function () {
 });
 
 gulp.task('default', function () {

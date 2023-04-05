@@ -9,7 +9,7 @@
     "gulp-autoprefixer": "0.0.6",
     "gulp-browserify": "^0.4.4",
     "gulp-clean": "^0.2.4",
-    "gulp-connect": "^0.8.0",
+    "gulp-connect": "^5.7.0",
     "gulp-image": "^3.0.0",
     "gulp-jshint": "^1.4.0",
     "gulp-livereload": "^1.1.1",

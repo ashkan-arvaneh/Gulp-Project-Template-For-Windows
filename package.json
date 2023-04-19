@@ -6,7 +6,7 @@
     "coveralls": "^2.8.0",
     "event-stream": "^3.1.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "0.0.6",
+    "gulp-autoprefixer": "8.0.0",
     "gulp-browserify": "^0.4.4",
     "gulp-clean": "^0.2.4",
     "gulp-connect": "^0.8.0",
